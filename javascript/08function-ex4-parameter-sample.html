@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="../css/all.min.css">
-<style>
-#icon1 {
-    font-size: 50px;
-}
-</style>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+        #icon1 {
+            font-size: 50px;
+        }
+    </style>
 </head>
 
 <body>
-<input onkeyup="changeCall()" type="text" id="input1">
-<div><i id="icon1" class="fas fa-heart"></i></div>
+    <input onkeyup="changeCall()" type="text" id="input1">
+    <div><i id="icon1" class="fas fa-heart"></i></div>
 
-<script>
+    <script>
 
-    function changeCall() {
-        var v = document.getElementById("input1").value;
-        change(v);
-    }
+        function changeCall() {
+            var v = document.getElementById("input1").value;
+            change(v);
+        }
 
-    function change(iconName) {
-        document.getElementById("icon1").className = iconName;
-    }
-</script>
+        function change(iconName) {
+            document.getElementById("icon1").className = iconName;
+        }
+    </script>
 </body>
+
 </html>
