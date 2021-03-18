@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    화씨 :
+
+    <input type="text" id="input1">
+    
+    <button onclick="process()" id="button1">섭씨로 변환</button>
+    <br>
+    섭씨 :
+    <input type="text" readonly="readonly" id="input2">
+
+    <script>
+        function toCelsius(fahrenheit) {
+            return (5 / 9) * (fahrenheit - 32);
+        }
+
+        function process() {
+            var fah = document.getElementById("input1").value;
+            var celsius = toCelsius(fah);
+            document.getElementById("input2").value = celsius;
+        }
+
+    </script>
+
+</body>
+
+</html>
