@@ -6,19 +6,22 @@
 </style>
 </head>
 <body>
-
+<p id="myName"></p>
     <script>
         var person = {
             firstName:"John",
             lastName:"Doe",
             id : 5566,
             fullName : function() {
-                return this.firstName + " " + this.lastName;
+                return this.firstName +"<br>"+ this.lastName;
             }
         };
+    // JS 에서 엔터는 "<br>" 띄어쓰기는 "\u00A0"
+        // console.log(person.fullName());
+        document.getElementById("myName").innerHTML = person.fullName();
 
-        console.log(person.fullName);
-        // person.fullName();
+        
+        
     </script>
 </body>
 </html> 

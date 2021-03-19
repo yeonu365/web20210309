@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+<button onclick="randomNumber()">번호뽑기</button>
+<div id="result1"></div>
+<div id="result2"></div>
+<div id="result3"></div>
+<div id="result4"></div>
+<div id="result5"></div>
+<div id="result6"></div>
+
+
+<script>
+function randomNumber() {
+    var ran1 = Math.floor(Math.random()* 45) + 1;
+    document.getElementById("result1").innerHTML = ran1;
+    var ran2 = Math.floor(Math.random()* 45) + 1;
+    document.getElementById("result2").innerHTML = ran2;
+    var ran3 = Math.floor(Math.random()* 45) + 1;
+    document.getElementById("result3").innerHTML = ran3;
+    var ran4 = Math.floor(Math.random()* 45) + 1;
+    document.getElementById("result4").innerHTML = ran4;
+    var ran5 = Math.floor(Math.random()* 45) + 1;
+    document.getElementById("result5").innerHTML = ran5;
+    var ran6 = Math.floor(Math.random()* 45) + 1;
+    document.getElementById("result6").innerHTML = ran6;
+}
+
+</script>
+</body>
+</html> 
