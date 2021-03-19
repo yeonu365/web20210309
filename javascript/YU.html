@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylesheet" href="../css/all.min.css">
-    <style>
+<style>
 
-    </style>
+</style>
 </head>
-
 <body>
-    <h1>&bigstar;</h1>
+
     <script>
-        function fucntionName(argument1, argument2) {
-            console.log("éáÙ❤💛💚☆");
-        }
+        var person = {
+            firstName:"John",
+            lastName:"Doe",
+            id : 5566,
+            fullName : function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
 
-        // var functionName = (params) {
-            
-        // }
+        console.log(person.fullName);
+        // person.fullName();
     </script>
-
-
 </body>
-
-</html>
+</html> 
