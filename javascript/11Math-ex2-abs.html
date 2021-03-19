@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+
+    <br>
+    <button onclick="diff()">두 값의 차</button>
+
+    <p><span class="result"></span>입니다.</p>
+
+    <script>
+        function diff() {
+            var s = Number(document.getElementById("input1").value);
+            var p = Number(document.getElementById("input2").value);
+            document.getElementsByClassName("result")[0].innerHTML = Math.abs(s - p);
+        }
+
+        console.log(Math.abs(3));
+        console.log(Math.abs(0));
+        console.log(Math.abs(-3));
+        console.log(Math.abs(-10));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+<input type="text" id="input1">
+<br>
+<button onclick="area()">원의 넓이 구하기</button>
+<br>
+<button onclick="length()">원의 둘레 구하기</button>
+
+<p>원의 넓이는 <span id="result"></span>입니다.</p>
+<p>원의 둘레는 <span id="result2"></span>입니다.</p>
+
+    <script>
+    var c = math.PI; 
+    console.log(c);
+    console.log(Math.PI);
+
+    function area() {
+        var r = document.getElementById("input1").value;
+        document.getElementById("result").innerHTML = r * r * Math.PI;
+
+    }
+
+    function length() {
+        var r = document.getElementById("input1").value;
+        var p = 2 * r * Math.PI;
+        p = p.toFixed(2);
+
+        document.getElementById("result2").innerHTML = p;
+    }
+
+    // 정수로 값 나오게 해보기/ p.toFixed(2); 는 소수점 2자리까지표기
+
+</script>
+</body>
+</html> 
