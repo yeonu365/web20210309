@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <h1>구구단</h1>
+    <div id="result"></div>
+
+    <script>
+        j, i = Number;
+
+        var txt = "";
+        for (var j = 2; j <= 9; j++) {
+            for (var i = 1; i <= 9; i++) {
+                txt += j + " X " + i + "=" + (j * i) + "<br>";
+            }
+
+            document.getElementById("result").innerHTML = txt;
+        }
+    </script>
+</body>
+
+</html>

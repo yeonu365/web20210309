@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="input1" placeholder="1부터 100사이의 수를 입력해주세요.">
+    <br>
+
+    <button onclick="check()">확인</button>
+    <h3 id="message"></h3>
+    <p id="count"></p>
+    <p id="letters"></p>
+
+
+    <script>
+        var computerNumber = Math.floor(Math.random() * 100) + 1;
+        console.log(computerNumber);
+        var cnt = 0;
+        function check() {
+            var userNumber = document.getElementById("input1").value;
+            useNumber = Number(userNumber);
+
+            var txt = "";
+            if (userNumber == computerNumber) {
+                txt = "정답입니다.";
+            } else if (userNumber < computerNumber) {
+                txt = "더 큰 수를 입력해주세요.";
+            } else {
+                txt = "더 작은 수를 입력해주세요."
+            }
+            document.getElementById("message").innerHTML = txt;
+
+            cnt++;
+            document.getElementById("count").innerHTML = cnt + "번 시도";
+
+            if (userNumber == computerNumber && cnt <= 5) {
+            document.getElementById("letters").innerHTML = "도전성공";
+            } else if (userNumber == computerNumber && cnt>6) {
+                document.getElementById("letters").innerHTML = "성공한거나 다름없다.";    
+            }
+            else {
+                document.getElementById("letters").innerHTML = "재도전!";
+            }
+        };
+
+
+    </script>
+</body>
+
+</html>
