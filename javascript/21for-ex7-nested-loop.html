@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="result"></div>
+    <hr>
+    <div id="result2"></div>
+    <hr>
+    <div id="result3"></div>
+    <hr>
+    <div id="result4"></div>
+    <script>
+        var txt = "";
+        for (var i = 1; i <= 5; i++) {
+            for (var j = 1; j <= i; j++) {
+                txt += "*"
+            }
+            txt += "<br>";
+        }
+        document.getElementById("result").innerHTML = txt;
+
+        var txt2 = "";
+        for (var a = 1; a <= 5; a++) {
+            for (var b = 5; b >= a; b--) {
+                txt2 += "*"
+            }
+            txt2 += "<br>";
+        }
+        document.getElementById("result2").innerHTML = txt2;
+
+        var txt3 = "";
+        for (var a = 1; a <= 5; a++) {
+            for (var k = 0; k < a; k++){
+                txt3 += "&nbsp;";
+            }
+            for (var b = 5; b >= a; b--) {
+                txt3 += "*"
+            }
+            txt3 += "<br>";
+        }
+        document.getElementById("result3").innerHTML = txt3;
+
+        var txt4 = "";
+        for (var i = 1; i <= 5; i++) {
+            for (var k = 0; k <= (5-i); k++) {
+                txt4 += "&nbsp;";
+            }
+            for (var j = 1; j <= i; j++) {
+                txt4 += "*"
+            }
+            txt4 += "<br>";
+        }
+        document.getElementById("result4").innerHTML = txt4;
+
+    </script>
+</body>
+
+</html>
