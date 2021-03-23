@@ -1,4 +1,0 @@
-Visual Studio Code 에서 작업하고 Github 에 올리기.
-VS 작업은 항상 저장.! 
-ctrl+s -> 왼쪽changes 에서 + -> MSG 칸에 제목? 입력 -> 위에 체크 [COMMIT 행위]
-점세개 버튼 클릭 -> push 
