@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="result"></div>
+
+    <script>
+        // var dan = "";
+        var txt = "";
+        var i = 2;
+        while (i < 10) {
+            var j = 1;
+            while (j < 10) {
+                txt += i + " X " + j + " = " + (i * j) + "<br>";
+                j++;
+            }
+            i++;
+            // dan += txt + "<br>"; 이렇게 하면 2단이 9번 반복...
+        }
+        document.getElementById("result").innerHTML = txt;
+    </script>
+</body>
+
+</html>
