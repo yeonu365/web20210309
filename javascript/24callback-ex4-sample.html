@@ -18,17 +18,17 @@
     <div id="result"></div>
 
     <script>
-        // function add(a, b) {
-        //     return a + b;
-        // }
+        function add(a, b) {
+            return a + b;
+        }
 
-        // function minus(x, y) {
-        //     return x - y;
-        // }
+        function minus(x, y) {
+            return x - y;
+        }
 
-        // function calc(p1, p2, oper) {
-        //     return oper(p1, p2);
-        // }
+        function calc(p1, p2, oper) {
+            return oper(p1, p2);
+        }
 
         function process(op) {
              var x = Number(document.getElementById("input1").value);
@@ -38,10 +38,10 @@
 
             switch (op) {
                 case 'ddd':
-                    res = x + y;
+                    res = calc(x, y, add);
                     break;
                 case 'bbae':
-                    res = x - y;
+                    res = calc(x, y, minus);
                     break;
 
 

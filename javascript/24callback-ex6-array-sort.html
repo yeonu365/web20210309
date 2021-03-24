@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <script>
+        var arr1 = ["hello", "lore",
+            "ipsum", "bts", "blackpink", "avengers"];
+
+ 
+        // arr1.forEach(function (param) {
+        //     console.log(param);
+        // });
+
+        // arr1.sort();
+        // arr1.forEach(function (param) {
+        //     console.log(param);
+        // })
+
+        arr1.sort(function (x, y) {
+            if (x > y){
+                return -1;
+            } else if (x < y) {
+                return 1;
+            } else {
+                return 0;
+            }
+        })
+        arr1.forEach(function (param) {
+            console.log(param);
+        })
+    </script>
+</body>
+
+</html>
